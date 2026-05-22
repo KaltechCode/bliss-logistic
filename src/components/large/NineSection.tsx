@@ -9,14 +9,14 @@ export default function NineSection() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           <div>
             <div className="flex items-center gap-2">
-              <div className="grid h-7 w-7 place-items-center rounded-full bg-[#0a0f1a] text-[#2ea2e2]">
-                <Image
-                  src={"/logo/main_logo.png"}
-                  height={250}
-                  width={250}
-                  alt="bliss logistic logo"
-                />
-              </div>
+              <Image
+                src={"/logo/main_logo.png"}
+                height={550}
+                width={300}
+                alt="bliss logistic logo"
+                className="h-auto w-[190px] sm:w-[220px] md:w-[260px]"
+                priority
+              />
             </div>
           </div>
 
