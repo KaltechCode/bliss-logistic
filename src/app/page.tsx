@@ -10,16 +10,22 @@ import ThirdSection from "@/components/large/ThirdSection";
 
 export default function Home() {
   return (
-    <main className="w-full px-5 py-5">
-      <Herosection />
-      <SecondSection />
-      <ThirdSection />
-      <FouthSection />
-      <SectionFive />
-      <SixSection />
-      <SevenSection />
-      <EightSection />
-      <NineSection />
-    </main>
+    <>
+      <div>
+        <Herosection />
+      </div>
+      <main className="w-full px-5 py-5 xl:px-10">
+        <SecondSection />
+        <ThirdSection />
+        <FouthSection />
+        <SectionFive />
+        <SixSection />
+        <SevenSection />
+        <EightSection />
+      </main>
+      <footer>
+        <NineSection />
+      </footer>
+    </>
   );
 }

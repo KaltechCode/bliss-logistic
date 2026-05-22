@@ -1,22 +1,24 @@
+import Image from "next/image";
+
 export default function SixSection() {
   return (
     <section className="h-screen w-full py-[5vh]">
       <div className="h-full w-full rounded-[18px] bg-[#e9e9e9] px-4 py-6 sm:px-6 sm:py-8 md:px-10 md:py-10">
         <div className="grid h-full grid-rows-[1fr_auto] gap-6">
           <div className="grid items-center gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-4">
-              <div className="h-[220px] overflow-hidden rounded-[18px] sm:h-[260px] md:h-[300px]">
-                <div
-                  className="h-full w-full bg-cover bg-no-repeat"
-                  style={{
-                    backgroundImage: "url('/images/logistic-van.jpg')",
-                    backgroundPosition: "center 64%",
-                  }}
+            <div className="lg:col-span-6">
+              <div className="h-[220px] overflow-hidden  sm:h-[260px] md:h-[300px]">
+                <div />
+                <Image
+                  src={"/images/logistic-van.jpg"}
+                  alt="image"
+                  height={500}
+                  width={500}
                 />
               </div>
             </div>
 
-            <div className="lg:col-span-8">
+            <div className="lg:col-span-6">
               <p className="k-eyebrow inline-flex items-center gap-2 text-[#131313]">
                 <span className="text-[16px] leading-none text-[#2ea2e2]"></span>
                 <span>OUR SOLUTIONS</span>

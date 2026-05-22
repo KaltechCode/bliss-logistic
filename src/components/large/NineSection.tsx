@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function NineSection() {
   return (
     <footer className="w-full">
-      <div className="w-full rounded-[18px] bg-[#050505] px-5 py-8 text-white sm:px-8 md:px-10 md:py-10">
+      <div className="w-full bg-[#050505] px-5 py-8 text-white sm:px-8 md:px-10 md:py-10">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           <div>
             <div className="flex items-center gap-2">

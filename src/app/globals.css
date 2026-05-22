@@ -9,6 +9,33 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter-font);
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  --breakpoint-3k: 1920px;
+  --breakpoint-4k: 2568px;
+}
+
+@custom-variant mobile-landscape {
+  @media (max-height: 480px) and (max-width: 960px) and (orientation: landscape) {
+    @slot;
+  }
+}
+
+@custom-variant md-landscape {
+  @media (max-height: 1024px) and (max-width: 1028px) and (orientation: landscape) {
+    @slot;
+  }
+}
+
+@custom-variant md-portrait {
+  @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    @slot;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,30 +52,36 @@ body {
 
 /* Shared type scale for section consistency */
 .k-eyebrow {
-  font-size: clamp(0.78rem, 0.7rem + 0.25vw, 0.95rem);
+  font-size: clamp(0.78rem, 0.72rem + 0.2vw, 0.95rem);
   font-weight: 600;
   letter-spacing: 0.08em;
 }
 
 .k-section-title {
-  font-size: clamp(1.8rem, 1.2rem + 2vw, 3.9rem);
+  font-size: clamp(1.75rem, 1.15rem + 1.7vw, 3.6rem);
   line-height: 1.08;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
+.hero-section-title {
+  font-size: clamp(2.75rem, 1.7rem + 2.5vw, 6.6rem);
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 .k-card-title {
-  font-size: clamp(1.2rem, 1rem + 0.9vw, 2rem);
+  font-size: clamp(1.1rem, 0.95rem + 0.75vw, 1.75rem);
   line-height: 1.18;
   font-weight: 600;
 }
 
 .k-body-lg {
-  font-size: clamp(1rem, 0.92rem + 0.35vw, 1.28rem);
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.16rem);
   line-height: 1.45;
 }
 
 .k-body-sm {
-  font-size: clamp(0.86rem, 0.8rem + 0.2vw, 1rem);
+  font-size: clamp(0.86rem, 0.8rem + 0.16vw, 0.96rem);
   line-height: 1.45;
 }

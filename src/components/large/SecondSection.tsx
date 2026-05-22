@@ -27,8 +27,8 @@ export default function SecondSection() {
           </div>
         </div>
 
-        <div className="grid gap-7 md:grid-cols-12 mt-12">
-          <article className="rounded-[20px] bg-[#f2f2f2] p-5 md:col-span-3 md:min-h-[300px] md:p-6">
+        <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-12">
+          <article className="rounded-[20px] bg-[#f2f2f2] p-5 md:min-h-[300px] md:p-6 xl:col-span-3">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#dfdfdf] text-[18px] text-[#2ea2e2]">
               <MdOutlineMapsHomeWork size={20} />
             </div>
@@ -42,7 +42,7 @@ export default function SecondSection() {
             </p>
           </article>
 
-          <article className="rounded-[20px] bg-black p-5 text-white md:col-span-3 md:min-h-[300px] md:p-6">
+          <article className="rounded-[20px] bg-black p-5 text-white md:min-h-[300px] md:p-6 xl:col-span-3">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1ea2ea] text-[18px] text-white">
               <PiFoldersDuotone size={20} />
             </div>
@@ -56,7 +56,7 @@ export default function SecondSection() {
             </p>
           </article>
 
-          <article className="rounded-[20px] bg-[#34a3dc] p-5 text-white md:col-span-6 md:min-h-[300px] md:p-6">
+          <article className="rounded-[20px] bg-[#34a3dc] p-5 text-white md:col-span-2 md:min-h-[300px] md:p-6 xl:col-span-6">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[18px] text-white">
               <BsGlobeAmericas size={24} />
             </div>
