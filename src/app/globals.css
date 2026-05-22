@@ -70,10 +70,24 @@ body {
   font-weight: 700;
   letter-spacing: -0.02em;
 }
+.big-section-title {
+  font-size: clamp(1.8rem, 1.7rem + 2vw, 5.5rem);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  /* @media screen and (max-height: 480px) and (max-width: 960px) and (orientation: landscape) {
+    font-size: clamp(1.3rem, 1.2rem + 1.5vw, 3.5rem);
+  } */
+}
 .k-card-title {
   font-size: clamp(1.1rem, 0.95rem + 0.75vw, 1.75rem);
   line-height: 1.18;
-  font-weight: 600;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  @media screen and (min-width: 1024) {
+    font-size: clamp(1.1rem, 0.95rem + 0.5vw, 1.5rem);
+  }
 }
 
 .k-body-lg {
@@ -82,6 +96,9 @@ body {
 }
 
 .k-body-sm {
-  font-size: clamp(0.86rem, 0.8rem + 0.16vw, 0.96rem);
+  font-size: clamp(0.86rem, 0.8rem + 0.4vw, 1.25rem);
   line-height: 1.45;
+  @media screen and (min-width: 1024) {
+    font-size: clamp(0.86rem, 0.8rem + 0.25vw, 1.5rem);
+  }
 }

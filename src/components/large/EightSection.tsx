@@ -5,19 +5,19 @@ import { GiAngelWings } from "react-icons/gi";
 
 export default function EightSection() {
   return (
-    <section className="h-auto lg:h-screen w-full py-[10vh]">
+    <section className="h-auto w-full">
       <div
-        className="relative h-full w-full overflow-hidden rounded-[18px] bg-cover bg-center bg-no-repeat"
+        className="relative h-full w-full overflow-hidden bg-cover bg-center bg-no-repeat  py-24 md:py-32"
         style={{
           backgroundImage: "url('/images/third-bg.jpg')",
           backgroundPosition: "center 64%",
         }}
       >
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(19,19,19,0.35)_0%,rgba(19,19,19,0.15)_45%,rgba(19,19,19,0.22)_100%)]" />
+        <div className="absolute  inset-0 bg-[linear-gradient(120deg,rgba(19,19,19,0.35)_0%,rgba(19,19,19,0.15)_45%,rgba(19,19,19,0.22)_100%)]" />
 
-        <div className="relative z-10 h-full w-full p-4 sm:p-6 md:p-8">
+        <div className="relative z-10 w-[90%] mx-auto">
           <div className="grid h-full gap-4 lg:grid-cols-12 lg:gap-6">
-            <div className="rounded-[14px] bg-[rgba(21,24,29,0.72)] p-5 text-white backdrop-blur-[3px] sm:p-6 md:p-8 lg:col-span-7">
+            <div className="rounded-[14px] bg-[rgba(21,24,29,0.72)] py-16 px-8 text-white backdrop-blur-[3px]  lg:col-span-7">
               <p className="k-eyebrow tracking-[0.3em] text-white/85">
                 LET'S GROW TOGETHER
               </p>
@@ -31,7 +31,9 @@ export default function EightSection() {
                   <div className="text-3xl">
                     <LuMessagesSquare size={24} />
                   </div>
-                  <h3 className="k-card-title mt-3">Fast Response</h3>
+                  <h3 className="k-card-title mt-3 text-left!">
+                    Fast Response
+                  </h3>
                   <p className="k-body-sm mt-2 text-white/85">
                     Quick and responsive service communication to ensure
                     operational continuity.
@@ -42,7 +44,9 @@ export default function EightSection() {
                   <div className="text-3xl">
                     <GiAngelWings size={24} />
                   </div>
-                  <h3 className="k-card-title mt-3">Clear Next Steps</h3>
+                  <h3 className="k-card-title mt-3 text-left!">
+                    Clear Next Steps
+                  </h3>
                   <p className="k-body-sm mt-2 text-white/85">
                     Clear and well-defined steps that guide your progress with
                     clarity and confidence.
@@ -51,17 +55,17 @@ export default function EightSection() {
               </div>
             </div>
 
-            <div className="rounded-[12px] bg-[#efefef] px-4 py-10 text-[#1b1b1b] shadow-[0_10px_30px_rgba(0,0,0,0.2)] sm:p-5 md:p-6 lg:col-span-5">
+            <div className="rounded-[12px] bg-[#efefef] px-8 py-16 mt-16 lg:mt-0 text-[#1b1b1b] shadow-[0_10px_30px_rgba(0,0,0,0.2)]  lg:col-span-5">
               <h3 className="k-card-title">
                 Do You Have Any Questions Or
                 <br />
-                <span className="text-[#3f79d9] text-md mt-10">
+                <p className="text-[#3f79d9] text-md mt-2">
                   Would You Like To Discuss Further?
-                </span>
+                </p>
               </h3>
 
               <form
-                className="mt-5 space-y-4 md:mt-6"
+                className="mt-16 space-y-4  md:mt-7"
                 onSubmit={(e) => e.preventDefault()}
               >
                 <div>
@@ -80,7 +84,7 @@ export default function EightSection() {
                   />
                 </div>
 
-                <div>
+                <div className="mt-7">
                   <label
                     htmlFor="email"
                     className="mb-1 block text-sm font-medium text-[#2c2c2c]"
@@ -96,7 +100,7 @@ export default function EightSection() {
                   />
                 </div>
 
-                <div>
+                <div className="mt-7">
                   <label
                     htmlFor="message"
                     className="mb-1 block text-sm font-medium text-[#2c2c2c]"
@@ -114,7 +118,7 @@ export default function EightSection() {
 
                 <button
                   type="submit"
-                  className="mt-1 inline-flex w-full items-center justify-center rounded-full bg-[#151515] px-6 py-3 text-base font-medium text-white transition hover:bg-black"
+                  className="mt-10 inline-flex w-full items-center justify-center rounded-full bg-[#151515] px-6 py-3 text-base font-medium text-white transition hover:bg-black"
                 >
                   Get Started
                 </button>

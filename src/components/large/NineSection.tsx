@@ -21,7 +21,7 @@ export default function NineSection() {
           </div>
 
           <div>
-            <h3 className="k-card-title text-white">Services</h3>
+            <h3 className="k-card-title text-white text-left!">Services</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
               <li>Freight Forwarding</li>
               <li>Warehousing</li>
@@ -31,7 +31,7 @@ export default function NineSection() {
           </div>
 
           <div>
-            <h3 className="k-card-title text-white">Company</h3>
+            <h3 className="k-card-title text-white text-left!">Company</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
               <li>About Us</li>
               <li>Careers</li>
@@ -41,7 +41,7 @@ export default function NineSection() {
           </div>
 
           <div>
-            <h3 className="k-card-title text-white">Support</h3>
+            <h3 className="k-card-title text-white text-left!">Support</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
               <li>Help Center</li>
               <li>FAQs</li>

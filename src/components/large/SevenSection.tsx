@@ -42,21 +42,21 @@ export default function SevenSection() {
   const [openId, setOpenId] = useState<string>("01");
 
   return (
-    <section className="h-screen w-full py-[5vh]">
-      <div className="h-full w-full rounded-[18px] bg-[#e9e9e9] px-4 sm:px-6 py-10  md:px-8 md:py-8">
-        <div className="h-full overflow-hidden rounded-[12px] border border-[#d8d8d8] py-10 bg-[#ececec]">
+    <section className="h-auto w-full">
+      <div className="h-full w-full rounded-[18px] bg-[#ececec] py-32">
+        <div className="h-full w-[90%] mx-auto overflow-hidden py-10 bg-[#ececec]">
           {items.map((item) => {
             const isOpen = openId === item.id;
 
             return (
               <div
                 key={item.id}
-                className="border-b border-[#d7d7d7] last:border-b-0"
+                className="border-b border-[#d7d7d7]/50 last:border-b-0"
               >
                 <button
                   type="button"
                   onClick={() => setOpenId(isOpen ? "" : item.id)}
-                  className="grid w-full grid-cols-[56px_1fr_34px] items-start gap-4 px-4 py-5 text-left sm:grid-cols-[80px_1fr_42px] sm:px-6 md:grid-cols-[110px_1fr_56px] md:gap-6 md:px-8"
+                  className="grid w-full grid-cols-[56px_1fr_34px] items-start gap-4 px-4 py-7 text-left sm:grid-cols-[80px_1fr_42px] sm:px-6 md:grid-cols-[110px_1fr_56px] md:gap-6 md:px-8"
                   aria-expanded={isOpen}
                   aria-controls={`panel-${item.id}`}
                 >
@@ -72,17 +72,17 @@ export default function SevenSection() {
                     {isOpen && (
                       <div
                         id={`panel-${item.id}`}
-                        className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:grid-cols-[190px_1fr]"
+                        className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:gap-7 md:grid-cols-8 py-10 md:py-12"
                       >
                         <div
-                          className="h-[72px] w-full rounded-[14px] bg-cover bg-center bg-no-repeat"
+                          className="h-[150px] md:h-[100px] w-full rounded-[14px] bg-cover bg-center bg-no-repeat md:col-start-4 md:col-span-1"
                           style={{
                             backgroundImage:
                               "url('/images/hero_background.jpg')",
                             backgroundPosition: "center 72%",
                           }}
                         />
-                        <p className="k-body-sm max-w-[460px] text-[#3d3d3d]">
+                        <p className="k-body-sm max-w-[460px] text-[#3d3d3d] md:col-start-5 md:col-span-2">
                           {item.description}
                         </p>
                       </div>
@@ -110,4 +110,3 @@ export default function SevenSection() {
     </section>
   );
 }
-
