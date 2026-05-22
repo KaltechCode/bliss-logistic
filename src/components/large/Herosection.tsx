@@ -5,9 +5,9 @@ import BtnWhiteAngle from "../small/buttons/BtnWhiteAngle";
 
 export default function Herosection() {
   return (
-    <section className="h-screen w-full ">
+    <section className="w-full">
       <div
-        className="relative h-[650px] md:h-screen w-full overflow-hidden bg-cover bg-no-repeat text-white"
+        className="relative h-[650px] lg:h-screen w-full overflow-hidden bg-cover bg-no-repeat text-white"
         style={{
           backgroundImage: "url('/images/hero_background.jpg')",
           backgroundPosition: "center 58%",
@@ -48,7 +48,7 @@ export default function Herosection() {
           </header>
 
           <div className="relative top-[18%] md:top-[22%] lg:top-[25%]">
-            <div className="w-[70%]">
+            <div className="md:w-[70%] mobile-landscape:w-[70%]">
               <h1
                 className="hero-section-title max-w-[760px] text-white drop-shadow-lg"
                 style={{ textShadow: "0 4px 8px rgba(0,0,0,0.6)" }}

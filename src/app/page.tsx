@@ -14,7 +14,7 @@ export default function Home() {
       <div>
         <Herosection />
       </div>
-      <main className="w-full px-5 py-5 xl:px-10">
+      <main className="w-full">
         <SecondSection />
         <ThirdSection />
         <FouthSection />

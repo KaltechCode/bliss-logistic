@@ -4,8 +4,8 @@ import { BsGlobeAmericas } from "react-icons/bs";
 
 export default function SecondSection() {
   return (
-    <section className=" h-auto md:h-screen w-full px-0 py-10 sm:px-6 md:px-10 lg:px-14">
-      <div className="mx-auto grid h-full w-full gap-8 rounded-[18px] bg-[#e9e9e9] p-5 sm:p-6 md:p-8">
+    <section className=" h-auto md-landscape:h-auto xl:h-screen w-full bg-[#e9e9e9] py-4 md:py-10 lg:py-16 ">
+      <div className="mx-auto grid h-full w-[90%] max-w-[1920px] gap-8 rounded-[18px] py-5">
         <div className="grid gap-6 md:grid-cols-12 md:items-start">
           <div className="md:col-span-7">
             <p className="k-eyebrow inline-flex items-center gap-2 text-[#101010]">
@@ -18,7 +18,7 @@ export default function SecondSection() {
             </h2>
           </div>
 
-          <div className="md:col-span-5 md:pt-10 mt-7">
+          <div className="md:col-span-5 md:pt-10 mt-7 md:mt-0">
             <p className="k-body-lg max-w-[500px] text-[#2f2f2f]">
               At Bliz, we believe logistics should be simple and dependable. Our
               team empowers companies to move goods faster and safer, allowing
@@ -27,8 +27,8 @@ export default function SecondSection() {
           </div>
         </div>
 
-        <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-12">
-          <article className="rounded-[20px] bg-[#f2f2f2] p-5 md:min-h-[300px] md:p-6 xl:col-span-3">
+        <div className="mt-12 grid gap-7 md:grid-cols-2 lg:grid-cols-12">
+          <article className="rounded-[20px] bg-[#f2f2f2] p-5 md:min-h-[300px] md:p-6 lg:col-span-3">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#dfdfdf] text-[18px] text-[#2ea2e2]">
               <MdOutlineMapsHomeWork size={20} />
             </div>
@@ -42,7 +42,7 @@ export default function SecondSection() {
             </p>
           </article>
 
-          <article className="rounded-[20px] bg-black p-5 text-white md:min-h-[300px] md:p-6 xl:col-span-3">
+          <article className="rounded-[20px] bg-black p-5 text-white md:min-h-[300px] md:p-6 lg:col-span-3">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#1ea2ea] text-[18px] text-white">
               <PiFoldersDuotone size={20} />
             </div>
@@ -56,7 +56,7 @@ export default function SecondSection() {
             </p>
           </article>
 
-          <article className="rounded-[20px] bg-[#34a3dc] p-5 text-white md:col-span-2 md:min-h-[300px] md:p-6 xl:col-span-6">
+          <article className="rounded-[20px] bg-[#34a3dc] p-5 text-white md:col-span-2 md:min-h-[300px] md:p-6 lg:col-span-6">
             <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-black text-[18px] text-white">
               <BsGlobeAmericas size={24} />
             </div>
