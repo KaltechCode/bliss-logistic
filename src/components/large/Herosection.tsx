@@ -2,6 +2,7 @@ import { navItem } from "@/data/nav";
 import Image from "next/image";
 import LinkText from "../small/topography/linkText";
 import BtnWhiteAngle from "../small/buttons/BtnWhiteAngle";
+import Link from "next/link";
 
 export default function Herosection() {
   return (
@@ -20,12 +21,14 @@ export default function Herosection() {
         <div className="relative z-10 flex h-full flex-col py-5 w-[90%] max-w-[1920px] mx-auto">
           <header className="flex flex-wrap items-center justify-between gap-3">
             <div className="hidden items-center gap-2 mobile-landscape:hiiden lg:flex">
-              <Image
-                src={"/logo/bliz-logo.png"}
-                height={250}
-                width={250}
-                alt="Bliz logo"
-              />
+              <Link href={"/"}>
+                <Image
+                  src={"/logo/bliz-logo.png"}
+                  height={250}
+                  width={250}
+                  alt="Bliz logo"
+                />
+              </Link>
             </div>
 
             <nav className="mx-auto">

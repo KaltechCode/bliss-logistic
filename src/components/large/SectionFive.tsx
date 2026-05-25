@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function SectionFive() {
   return (
     <section className="h-auto lg:h-auto w-full">
-      <div className="h-full w-[90%] rounded-[18px] py-16 md:py-24 lg:py-24 mx-auto">
+      <div className="h-full w-[90%] max-w-[1520px] rounded-[18px] py-16 md:py-24 lg:py-24 mx-auto">
         <div className="flex h-full flex-col">
           <div className="text-center">
             <p className="k-eyebrow text-[#2ea2e2]">Simple Process</p>

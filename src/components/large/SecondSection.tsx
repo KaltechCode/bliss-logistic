@@ -5,7 +5,7 @@ import { BsGlobeAmericas } from "react-icons/bs";
 export default function SecondSection() {
   return (
     <section className=" h-auto md-landscape:h-auto xl:h-screen w-full bg-[#e9e9e9] py-4 md:py-10 lg:py-16 ">
-      <div className="mx-auto grid h-full w-[90%] max-w-[1920px] gap-8 rounded-[18px] py-5">
+      <div className="mx-auto grid h-full w-[90%] max-w-[1520px] gap-8 rounded-[18px] py-5">
         <div className="grid gap-6 md:grid-cols-12 md:items-start">
           <div className="md:col-span-7">
             <p className="k-eyebrow inline-flex items-center gap-2 text-[#101010]">

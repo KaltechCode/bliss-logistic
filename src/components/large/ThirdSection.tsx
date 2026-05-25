@@ -3,9 +3,9 @@ import { homeServices, IService } from "@/data/service";
 
 export default function ThirdSection() {
   return (
-    <section className="h-auto lg:h-auto  md-landscape:h-auto w-full">
+    <section className="h-auto w-full">
       <div className="h-full w-full bg-[#060707] text-white py-10 lg:py-16">
-        <div className="flex h-full w-[90%] mx-auto flex-col gap-8 md:gap-10 py-6">
+        <div className="flex h-full w-[90%] max-w-[1520px] mx-auto flex-col gap-8 md:gap-10 py-6">
           <p className="k-eyebrow text-[#2fa8eb]">Our Services</p>
           <div className="grid gap-6 md:grid-cols-12 md:items-end">
             <div className="md:col-span-9">

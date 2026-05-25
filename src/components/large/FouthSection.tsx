@@ -4,7 +4,7 @@ export default function FouthSection() {
       <div className="relative h-full w-full overflow-hidden bg-[#dcdcdc]  py-16 lg:py-16 xl:py-20">
         <div className="absolute inset-x-0 top-0 h-[58%] bg-[#070707]"></div>
 
-        <div className="relative z-10 h-full w-[95%] mx-auto">
+        <div className="relative z-10 h-full w-[90%] mx-auto max-w-[1520px]">
           <div
             className="relative h-full w-full overflow-hidden rounded-[18px] bg-cover bg-center bg-no-repeat py-10 xl:py-16"
             style={{

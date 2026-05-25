@@ -15,8 +15,8 @@ export default function EightSection() {
       >
         <div className="absolute  inset-0 bg-[linear-gradient(120deg,rgba(19,19,19,0.35)_0%,rgba(19,19,19,0.15)_45%,rgba(19,19,19,0.22)_100%)]" />
 
-        <div className="relative z-10 w-[90%] mx-auto">
-          <div className="grid h-full gap-4 lg:grid-cols-12 lg:gap-6">
+        <div className="relative z-10 w-[90%] max-w-[1520px] mx-auto">
+          <div className="grid h-full gap-4 lg:grid-cols-12 lg:gap-12">
             <div className="rounded-[14px] bg-[rgba(21,24,29,0.72)] py-16 px-8 text-white backdrop-blur-[3px]  lg:col-span-7">
               <p className="k-eyebrow tracking-[0.3em] text-white/85">
                 LET'S GROW TOGETHER
@@ -55,7 +55,7 @@ export default function EightSection() {
               </div>
             </div>
 
-            <div className="rounded-[12px] bg-[#efefef] px-8 py-16 mt-16 lg:mt-0 text-[#1b1b1b] shadow-[0_10px_30px_rgba(0,0,0,0.2)]  lg:col-span-5">
+            <div className="rounded-[12px] bg-[#efefef] px-8 py-16 mt-16 lg:mt-0 text-[#1b1b1b] shadow-[0_10px_30px_rgba(0,0,0,0.2)]  lg:col-span-5 ">
               <h3 className="k-card-title">
                 Do You Have Any Questions Or
                 <br />

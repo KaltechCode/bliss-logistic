@@ -4,6 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 import { FiArrowUpRight } from "react-icons/fi";
 
 import { useState } from "react";
+import Image from "next/image";
 
 type AccordionItem = {
   id: string;
@@ -14,27 +15,23 @@ type AccordionItem = {
 const items: AccordionItem[] = [
   {
     id: "01",
-    title: "Relocation and personal effects",
-    description:
-      "Your household and belongings, packed and moved door to door on the Cameroon to Canada route and beyond.",
+    title: "GENERAL CONTRACTING SERVICES",
+    description: "End-to-end project execution & management",
   },
   {
     id: "02",
-    title: "Sea and air freight",
-    description:
-      "Ship by sea when timing is flexible, or by air when delivery is urgent. We manage routing and updates end to end.",
+    title: "WAREHOUSE & DISTRIBUTION",
+    description: "Storage, fulfilment & last-mile delivery",
   },
   {
     id: "03",
-    title: "Customs and documentation",
-    description:
-      "We prepare paperwork, declarations, and clearances to keep your cargo compliant across origin and destination.",
+    title: "PROCUREMENT SERVICE",
+    description: "Strategic sourcing & vendor management and office supplies",
   },
   {
     id: "04",
-    title: "Storage and consolidation",
-    description:
-      "Need staging space or combined loads? We store safely and consolidate shipments for cost and transit efficiency.",
+    title: "RELIABLE GLOBAL SHIPPING",
+    description: "Air, sea & land freight worldwide",
   },
 ];
 
@@ -43,8 +40,8 @@ export default function SevenSection() {
 
   return (
     <section className="h-auto w-full">
-      <div className="h-full w-full rounded-[18px] bg-[#ececec] py-32">
-        <div className="h-full w-[90%] mx-auto overflow-hidden py-10 bg-[#ececec]">
+      <div className="w-full rounded-[18px] bg-[#ececec] py-32">
+        <div className="h-full w-[90%] max-w-[1520px] mx-auto overflow-hidden py-10 bg-[#ececec]">
           {items.map((item) => {
             const isOpen = openId === item.id;
 
@@ -64,27 +61,31 @@ export default function SevenSection() {
                     {item.id}
                   </span>
 
-                  <div>
-                    <h3 className="k-card-title font-normal text-[#121212]">
+                  <div className=" grid md:grid-cols-8">
+                    <h3 className="k-card-title font-normal text-[#121212] !text-left md:col-start-1 md:col-span-8 lg:col-start-3 lg:col-span-6">
                       {item.title}
                     </h3>
 
                     {isOpen && (
                       <div
                         id={`panel-${item.id}`}
-                        className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:gap-7 md:grid-cols-8 py-10 md:py-12"
+                        className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:gap-7 md:grid-cols-8 md:col-start-1 md:col-span-8"
                       >
-                        <div
-                          className="h-[150px] md:h-[100px] w-full rounded-[14px] bg-cover bg-center bg-no-repeat md:col-start-4 md:col-span-1"
-                          style={{
-                            backgroundImage:
-                              "url('/images/hero_background.jpg')",
-                            backgroundPosition: "center 72%",
-                          }}
-                        />
-                        <p className="k-body-sm max-w-[460px] text-[#3d3d3d] md:col-start-5 md:col-span-2">
-                          {item.description}
-                        </p>
+                        <div className="md:col-start-1 md:col-span-2 lg:col-start-3 lg:col-span-2 rounded-md overflow-hidden ">
+                          <Image
+                            src={"/images/hero_background.jpg"}
+                            height={550}
+                            width={300}
+                            alt="bliss logistic logo"
+                            className="h-auto w-[100%]"
+                            priority
+                          />
+                        </div>
+                        <div className=" max-w-[460px] text-[#3d3d3d]  md:max-w-[550px] md:col-start-1 md:col-span-8 lg:col-start-3 lg:col-span-6">
+                          <p className="k-body-sm md:max-w-[420px]">
+                            {item.description}
+                          </p>
+                        </div>
                       </div>
                     )}
                   </div>
