@@ -20,9 +20,9 @@ export default function SecondSection() {
 
           <div className="md:col-span-5 md:pt-10 mt-7 md:mt-0">
             <p className="k-body-lg max-w-[500px] text-[#2f2f2f]">
-              At Bliz, we believe logistics should be simple and dependable. Our
-              team empowers companies to move goods faster and safer, allowing
-              businesses to focus on growth.
+              At Bliz logistics, we believe logistics should be simple and
+              dependable. Our team empowers companies to move goods faster and
+              safer, allowing businesses to focus on growth.
             </p>
           </div>
         </div>

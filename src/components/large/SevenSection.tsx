@@ -16,32 +16,37 @@ const items: AccordionItem[] = [
   {
     id: "01",
     title: "GENERAL CONTRACTING SERVICES",
-    description: "End-to-end project execution & management",
+    description: "End-to-end project execution &amp; management",
   },
   {
     id: "02",
-    title: "WAREHOUSE & DISTRIBUTION",
-    description: "Storage, fulfilment & last-mile delivery",
+    title: "WAREHOUSE &amp; DISTRIBUTION",
+    description: "Storage, fulfilment &amp; last-mile delivery",
   },
   {
     id: "03",
     title: "PROCUREMENT SERVICE",
-    description: "Strategic sourcing & vendor management and office supplies",
+    description:
+      "Strategic sourcing &amp; vendor management and office supplies",
   },
   {
     id: "04",
     title: "RELIABLE GLOBAL SHIPPING",
-    description: "Air, sea & land freight worldwide",
+    description: "Air, sea &amp; land freight worldwide",
   },
 ];
 
 export default function SevenSection() {
-  const [openId, setOpenId] = useState<string>("01");
+  const [openId, setOpenId] = useState<string>("00");
 
   return (
     <section className="h-auto w-full">
       <div className="w-full rounded-[18px] bg-[#ececec] py-32">
         <div className="h-full w-[90%] max-w-[1520px] mx-auto overflow-hidden py-10 bg-[#ececec]">
+          <p className="k-eyebrow inline-flex items-center gap-2 text-[#131313] mb-10">
+            <span className="text-[16px] leading-none text-[#2ea2e2]"></span>
+            <span> Comprehensive Logistics Services</span>
+          </p>
           {items.map((item) => {
             const isOpen = openId === item.id;
 
@@ -66,18 +71,23 @@ export default function SevenSection() {
                       {item.title}
                     </h3>
 
-                    {isOpen && (
-                      <div
-                        id={`panel-${item.id}`}
-                        className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:gap-7 md:grid-cols-8 md:col-start-1 md:col-span-8"
-                      >
+                    <div
+                      id={`panel-${item.id}`}
+                      className={`overflow-hidden transition-all duration-500 ease-in-out w-full md:col-start-1 md:col-span-8 ${
+                        isOpen
+                          ? "max-h-[520px] opacity-100"
+                          : "max-h-0 opacity-0"
+                      }`}
+                      aria-hidden={!isOpen}
+                    >
+                      <div className="mt-4 grid items-start gap-3 sm:grid-cols-[160px_1fr] md:mt-5 md:gap-7 md:grid-cols-8 ">
                         <div className="md:col-start-1 md:col-span-2 lg:col-start-3 lg:col-span-2 rounded-md overflow-hidden ">
                           <Image
                             src={"/images/hero_background.jpg"}
                             height={550}
                             width={300}
                             alt="bliss logistic logo"
-                            className="h-auto w-[100%]"
+                            className="h-auto w-[70%] mobile-landscape:w-[100%] md:w-[100%]"
                             priority
                           />
                         </div>
@@ -87,7 +97,7 @@ export default function SevenSection() {
                           </p>
                         </div>
                       </div>
-                    )}
+                    </div>
                   </div>
 
                   <span

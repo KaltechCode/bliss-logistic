@@ -13,7 +13,7 @@ export default function NineSection() {
             <div className="flex items-center gap-2">
               <Link href={"/"} className="">
                 <Image
-                  src={"/logo/bliz-logo.png"}
+                  src={"/logo/main_logo.png"}
                   height={550}
                   width={300}
                   alt="bliss logistic logo"
@@ -27,10 +27,10 @@ export default function NineSection() {
           <div>
             <h3 className="k-card-title text-white text-left!">Services</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
-              <li>Freight Forwarding</li>
-              <li>Warehousing</li>
-              <li>Supply Chain Management</li>
-              <li>E-Commerce Fulfillment</li>
+              <li>Contracting</li>
+              <li>Warehousing &amp; Distribution</li>
+              <li>Procurement</li>
+              <li>Shipping</li>
             </ul>
           </div>
 
@@ -47,7 +47,16 @@ export default function NineSection() {
           <div>
             <h3 className="k-card-title text-white text-left!">Support</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
-              {/* <li>Help Center</li> */}
+              <li>
+                <a
+                  href={
+                    "https://www.google.com/maps/place/Bonduma+Spring/@4.155015,9.2648712,17.14z/data=!4m6!3m5!1s0x106133ad7b5d54c1:0x69a82b416e25fe1!8m2!3d4.1549898!4d9.2697507!16s%2Fg%2F11v5vy05yp?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                  }
+                >
+                  Bonduma, Buea <br />
+                  South West Region <br /> Cameroon
+                </a>
+              </li>
               <li>
                 <a href="tel:+237650942551"></a>+23765094255
               </li>

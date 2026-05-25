@@ -2,6 +2,7 @@ import truck from "../../public/images/TruckTrailer.png";
 import warehouse from "../../public/images/Warehouse.png";
 import vector from "../../public/images/Vector.png";
 import notepad from "../../public/images/Notepad.png";
+import { CiDeliveryTruck } from "react-icons/ci";
 
 export interface IService {
   title: string;
@@ -10,23 +11,23 @@ export interface IService {
 }
 export const homeServices: IService[] = [
   {
-    text: "We move your household from your old place to your new one. We pack it, you don't.",
-    title: "Door-to-door relocation",
+    text: "We handle freight movement, customs, and documentation end-to-end so your goods arrive on time without delays.",
+    title: "Shipping",
     image: truck,
   },
   {
-    text: "New place not ready? We'll hold your things. Shipping several loads? We'll combine them and cut the cost.",
-    title: "Storage & consolidation",
-    image: warehouse,
-  },
-  {
-    text: "Ship by sea to save money, or by air when you're in a hurry. Your call.",
-    title: "Sea & air freight",
+    text: "We provide reliable relocation and move-management support, including packing, handling, and coordinated delivery.",
+    title: "Contracting",
     image: vector,
   },
   {
-    text: "Duties and documentation handled at both ends, so your goods keep moving.",
-    title: "Customs clearance",
+    text: "We offer secure storage, load consolidation, and efficient distribution to reduce costs and simplify fulfillment.",
+    title: "Warehousing & Distribution",
+    image: warehouse,
+  },
+  {
+    text: "We source and deliver what you need through the best transport option, balancing speed, cost, and reliability.",
+    title: "Procurement",
     image: notepad,
   },
 ];

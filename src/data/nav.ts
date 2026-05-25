@@ -5,10 +5,10 @@ export const navItem = [
   },
   {
     label: "Tracking",
-    link: "tracking",
+    link: "/",
   },
   {
     label: "Services",
-    link: "services",
+    link: "/",
   },
 ];
