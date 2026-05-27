@@ -16,23 +16,22 @@ const items: AccordionItem[] = [
   {
     id: "01",
     title: "GENERAL CONTRACTING SERVICES",
-    description: "End-to-end project execution &amp; management",
+    description: "End-to-end project execution & management",
   },
   {
     id: "02",
-    title: "WAREHOUSE &amp; DISTRIBUTION",
-    description: "Storage, fulfilment &amp; last-mile delivery",
+    title: "WAREHOUSE & DISTRIBUTION",
+    description: "Storage, fulfilment & last-mile delivery",
   },
   {
     id: "03",
     title: "PROCUREMENT SERVICE",
-    description:
-      "Strategic sourcing &amp; vendor management and office supplies",
+    description: "Strategic sourcing & vendor management and office supplies",
   },
   {
     id: "04",
     title: "RELIABLE GLOBAL SHIPPING",
-    description: "Air, sea &amp; land freight worldwide",
+    description: "Air, sea & land freight worldwide",
   },
 ];
 

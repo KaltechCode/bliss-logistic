@@ -27,10 +27,10 @@ export default function NineSection() {
           <div>
             <h3 className="k-card-title text-white text-left!">Services</h3>
             <ul className="k-body-sm mt-3 space-y-2 text-white/85">
-              <li>Contracting</li>
-              <li>Warehousing &amp; Distribution</li>
-              <li>Procurement</li>
-              <li>Shipping</li>
+              <li>General Contracting Services</li>
+              <li>Warehouse & Distribution</li>
+              <li>Procurement Service</li>
+              <li>Global Shipping</li>
             </ul>
           </div>
 
@@ -77,6 +77,7 @@ export default function NineSection() {
           <Link
             href={"https://kaltechconsultancy.tech/"}
             className="font-primary"
+            target="_blank"
           >
             Designed by Kaltech Consultancy
           </Link>

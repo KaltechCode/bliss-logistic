@@ -12,7 +12,7 @@ export interface IService {
 export const homeServices: IService[] = [
   {
     text: "We handle freight movement, customs, and documentation end-to-end so your goods arrive on time without delays.",
-    title: "Shipping",
+    title: "Global Shipping",
     image: truck,
   },
   {
